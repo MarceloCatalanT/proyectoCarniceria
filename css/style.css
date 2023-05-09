@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*------------------------------HEADER-----------------------------*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    align-items: baseline;
+    background-color: #333;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: static;
+    top: 0;
+      
+}
+
+header ul{
+    display: flex;
+    
+}
+
+header li{
+    justify-content: flex-end;
+    list-style-type: none;
+    margin: 18px;
+    
+
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.nombre-pagina{
+    padding-left: 10px;
+    color: white;
+}
+
+/*------------------------------MAIN-----------------------------*/
+
+.banner h2{
+    text-align: center;
+    justify-content: center;
+}
+.banner img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.banner p{
+    margin: 30px 120px;
+    background-color: #D74E09;
+    border: 1px solid #000;
+}
+ 
+.texto {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.imagen{
+    text-align: center;
+    flex: 1;
+    overflow: hidden;
+}
+
+.imagen img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-left: 55px;
+}
+
+.container{
+  position: relative;
+}
+/*------------------------------MAIN FORMULARIO-----------------------------*/
+
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 200px;
+}
+.informacion {
+  float: left;
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.formulario {
+  float: right;
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.formulario h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+form .inp{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+/*------------------------------MAIN CATALOGO-----------------------------*/
+
+table {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+thead {
+  background-color: #ccc;
+}
+
+th {
+  font-weight: bold;
+  text-align: left;
+  padding: 10px;
+}
+
+td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+
+
+
+/*------------------------------FOOTER-----------------------------*/
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+  
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+  
+.contacto,.redes-sociales,.derechos {
+  width: 30%;
+}
+  
+.contacto h3,.redes-sociales h3 {
+  margin-top: 0;
+}
+  
+.enlaces ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+  
+.enlaces li {
+  margin-bottom: 10px;
+}
+  
+.enlaces a {
+  color: #fff;
+  text-decoration: none;
+}
+  
+.derechos-autor p {
+  margin-top: 0;
+}
+
+.redes-sociales ul {
+  list-style: none;
+}
+
+
+
+
+
+
