@@ -1,5 +1,5 @@
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,61 +8,97 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <title>Document</title>
-</head>
-<body class="container">
-    <header class="header">
-        <h2 class="nombre-pagina">Carnes Premium</h2>
-        <ul>
-            <li> <a href="../index.html">Inicio</a> </li>
-            <li> <a href="./catalogo.html">Catalogo</a> </li>
-            <li> <a href="./contacto.html">Contacto</a> </li>
-            <li> <a href="./sobre-nosotros.html">Nosotros</a> </li>
-            <li> <a href="./servicios.html">Servicios</a> </li>
-        </ul>
+  </head>
+  <body class="container">
+    <header>
+    <nav class="navbar">
+        <div class="nav_logo">
+            <img src="../imagenes/logo.png" alt="">
+        </div>
+        <div class="nav_items" id="_items">
+            <ul class="lista">
+                <li><a href="../index.html">INICIO</a></li>
+                <li><a href="./catalogo.html">CATALOGO</a></li>
+                <li><a href="./servicios.html">SERVICIOS</a></li>
+                <li><a href="./sobre-nosotros.html">NOSOTROS</a></li>
+            </ul>
+        </div>
+
+        <div class="nav_menu" id="_toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <a class="btn" href="./contacto.html"><button>Contacto</button></a>
+        
+   </nav>
+   
     </header>
     <main>
-        <div class="contenedor1">
-            <div class="informacion">
-              <h2>Información de la empresa</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam varius pharetra lectus, vel fringilla nisi efficitur eget. Sed aliquet neque sit amet metus congue, id consequat libero molestie. </p>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.1795889880977!2d-70.6578482258513!3d-33.44462737339177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c520ee999d71%3A0xb8fc4442590d4b0c!2sLa%20Moneda!5e0!3m2!1ses-419!2scl!4v1681427328058!5m2!1ses-419!2scl" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            <div class="formulario">
-              <h2>Contacto</h2>
-              <form>
-                <label for="nombre">Nombre:</label>
-                <input class="inp" type="text" id="nombre" name="nombre" required>
-                <label for="nombre">Telefono:</label>
-                <input class="inp" type="number" id="telefono" name="telefono" required>
-                <label for="email">Email:</label>
-                <input class="inp" type="email" id="email" name="email" required>
-                <label for="mensaje">Mensaje:</label>
-                <textarea class="inp" id="mensaje" name="mensaje" required></textarea>
-                <input type="submit" value="Enviar">
-              </form>
-            </div>
-          </div>
+      <section class="contenido">
+      <div class="banner">
+        <img src="../imagenes/carniceria.jpg" alt="">
+        <h2>Contactanos</h2>
+      </div>        
+      </section>
+      <div class="contenedor1">
+        <div class="informacion">
+          <h2>Información de la empresa</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam varius pharetra lectus, vel fringilla nisi efficitur eget. Sed aliquet neque sit amet metus congue, id consequat libero molestie. </p>
+          <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.1795889880977!2d-70.6578482258513!3d-33.44462737339177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c520ee999d71%3A0xb8fc4442590d4b0c!2sLa%20Moneda!5e0!3m2!1ses-419!2scl!4v1681427328058!5m2!1ses-419!2scl" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="formulario">
+          <h2>Contacto</h2>
+          <form>
+            <label for="nombre">Nombre:</label>
+            <input class="inp" type="text" id="nombre" name="nombre" required>
+            <label for="nombre">Telefono:</label>
+            <input class="inp" type="number" id="telefono" name="telefono" required>
+            <label for="email">Email:</label>
+            <input class="inp" type="email" id="email" name="email" required>
+            <label for="mensaje">Mensaje:</label>
+            <textarea class="inp" id="mensaje" name="mensaje" required></textarea>
+            <input type="submit" value="Enviar">
+          </form>
+        </div>
+      </div>
     </main>
+    <footer class="footer-estructura">
 
-    <footer>
-        <div class="footer">
-            <div class="contacto">
-              <h3>Contacto</h3>
-              <p>Correo electrónico: Ejemplo.Ejemplo.com</p>
-              <p>Teléfono: 999-999-999</p>
-            </div>
-            <div class="redes-sociales">
-              <h3>Redes Sociales</h3>
-              <ul>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">FaceBook</a></li>
-                <li><a href="#">Twitter</a></li>
-              </ul>
-            </div>
-            <div class="derechos">
-              <p>&copy; 2023 Carniceria Premium. Todos los derechos reservados.</p>
-            </div>
-          </div>
-    </footer>
-</body>
+      <div class="footer-costados">
+          <h3><span>Contacto</span></h3>
+          <p class="footer-links">
+              <a href="#">CorreoEmpresa@ejemplo.com</a>
+          </p>
+          <p class="footer-links">
+              <a href="#">999 999 999</a></p>
+          </p>
+      </div>
+
+
+      <div class="footer-centro">
+          <h3><span>Siguenos</span></h3>
+          <p class="footer-links">
+              <a href="#">Facebook</a>
+          </p>
+          <p class="footer-links">
+              <a href="#">Instagram</a></p>
+          </p>
+          <p class="footer-links">
+              <a href="#">Twitter</a></p>
+          </p>
+      </div>
+      
+      <div class="footer-costados">
+          <h3><span>Horarios</span></h3>
+          <p class="footer-links">
+              <a href="#">La Moneda #1234</a>
+          </p>
+          <p class="footer-links">
+              <a href="#">L - S de 12:00 hrs a 21:00 hrs - Feriados Horario Normal.</a></p>
+          </p>
+      </div>
+  </footer>
+    <script src="../js/script.js"></script>
+  </body>
 </html>
