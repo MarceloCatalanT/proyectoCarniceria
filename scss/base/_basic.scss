@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+html{
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+ol,
+ul,
+dl {
+  margin-top: 0;
+  margin-bottom: 0rem;
+}
+
+button{
+  font-size: initial;
+  line-height: initial;
+}
+.btn {
+  --bs-btn-padding-x: none;
+}
+
+.h2, h2, h1{
+  font-weight: 1000;
+}
+.conteiner {
+@media (min-width: 1400px) {
+  max-width: 100%;
+}
+}

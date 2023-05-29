@@ -1,0 +1,12 @@
+$colores-botones:(
+    primario: (#2d2a30, #D74E09),
+    secundario: (#e76f51, #e9c46a),
+    terciario: (#e5e5e5, #f7ede2)
+
+);
+
+@each $nombre-color, $color in $colores-botones {
+    .button-#{$nombre-color}{
+        background-image:linear-gradient($color);
+    }
+}

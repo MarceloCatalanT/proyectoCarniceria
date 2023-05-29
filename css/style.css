@@ -205,16 +205,14 @@ button{
     object-fit: cover;
     margin-left: 55px;
 }
-
-
-/*------------------------------MAIN FORMULARIO-----------------------------*/
-
 .contenedor {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
+/*------------------------------MAIN FORMULARIO-----------------------------*/
+
 .informacion {
   float: left;
   width: 50%;
@@ -334,17 +332,7 @@ form .inp{
 
 /*------------------------------FOOTER-----------------------------*/
 
-footer {
-  position: fixed;
-}
 
-@media (max-height:800px) {
-  footer {
-      position: static;
-      bottom: 0;
-  }
-  
-}
 
 .footer-estructura {
   background-color: #2d2a30;
@@ -398,3 +386,11 @@ footer {
       margin-left: 0;
   }
 } 
+
+@media (max-height:800px) {
+  footer {
+      position: static;
+      bottom: 0;
+  }
+  
+}

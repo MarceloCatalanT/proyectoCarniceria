@@ -1,0 +1,27 @@
+@mixin cajas ($ancho:300px, $alto:300px){
+    width: $ancho;
+    height: $alto;
+    margin: 40px auto;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: 0.4s;
+    border-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin botones {
+    border: 0;
+    border-radius: 8px;
+    color: #fff;
+    display: flex;
+    font-size: 18px;
+    padding: 4px;
+    cursor: pointer;
+    transition: .3s;
+    justify-content: center;
+    width: 200px;
+    align-self: center;
+}

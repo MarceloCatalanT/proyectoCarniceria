@@ -1,0 +1,10 @@
+.img-fluid {
+    @include cajas (600px, 400px);
+    object-fit: cover;
+}
+
+.container {
+    p{
+        text-align: justify;
+    }
+}
