@@ -1,11 +1,18 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat', sans-serif !important;
+    font-family: 'Coolvetica', sans-serif !important;
 }
 
 html{
   box-sizing: border-box;
+}
+
+main{
+  background: #FFEFBA;
+  background: -webkit-linear-gradient(to top, #FFFFFF, rgb(238, 228, 186));
+  background: linear-gradient(to top, #FFFFFF, rgb(238, 228, 186));
+
 }
 
 *, *::before, *::after {

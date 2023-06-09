@@ -1,11 +1,17 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Montserrat", sans-serif !important;
+  font-family: "Coolvetica", sans-serif !important;
 }
 
 html {
   box-sizing: border-box;
+}
+
+main {
+  background: #FFEFBA;
+  background: -webkit-linear-gradient(to top, #FFFFFF, rgb(238, 228, 186));
+  background: linear-gradient(to top, #FFFFFF, rgb(238, 228, 186));
 }
 
 *, *::before, *::after {
@@ -91,6 +97,7 @@ button:active {
   padding: 30px;
   opacity: 0.8;
   flex-wrap: nowrap;
+  z-index: 99;
 }
 .navbar .nav_logo {
   cursor: pointer;
@@ -155,25 +162,26 @@ button:active {
 @media (max-width: 768px) {
   .navbar .nav_items {
     position: absolute;
-    top: 80px;
+    top: 90px;
     left: 0;
     background: orange;
     display: flex;
     flex-direction: column;
     width: 100%;
-    align-items: center;
+    align-items: flex-start;
     height: auto;
     transform: translateX(-100%);
     transition: 0.3s ease all;
     z-index: 999;
   }
   .navbar .lista {
-    display: flex;
     flex-direction: column;
     background: orange;
+    width: 100%;
   }
   .navbar .lista li {
     display: flex;
+    border-bottom: 1px solid black;
   }
   .navbar .btn-contacto button {
     width: 100px;
@@ -210,19 +218,20 @@ button:active {
   }
 }
 
-.banner h2 {
-  text-align: center;
-  justify-content: center;
-  padding: 30px;
-  font-size: 40px;
-}
-.banner img {
+.contenido .banner img {
   width: 100%;
   height: auto;
   object-fit: cover;
+  clip-path: polygon(11% 93%, 0 100%, 0 0, 100% 0, 100% 100%, 88% 94%, 77% 93%, 65% 95%, 54% 90%, 41% 94%, 24% 97%);
 }
-.banner p {
-  margin: 30px 120px;
+.contenido .enunciado h2 {
+  text-align: center;
+  justify-content: center;
+  padding: 40px;
+  font-size: 40px;
+}
+.contenido .enunciado p {
+  margin: 30px 51px;
   background-color: #D74E09;
   border: 1px solid #000;
   text-align: justify;
@@ -232,29 +241,33 @@ button:active {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding-bottom: 80px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 .contenedor .imagen {
   text-align: center;
   flex: 1;
   overflow: hidden;
+  padding-right: 10px;
 }
 .contenedor .imagen img {
   width: 100%;
   height: 650px;
   object-fit: cover;
-  margin-left: 55px;
+  border-radius: 66% 34% 76% 24%/30% 52% 48% 70%;
 }
 .contenedor .texto {
   flex: 1;
-  padding: 0 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding-left: 10px;
 }
 .contenedor .texto p {
   align-self: flex-start;
   text-align: justify;
-  line-height: 25px;
+  line-height: 32px;
 }
 .contenedor .texto a {
   font-weight: 500;
@@ -268,6 +281,7 @@ button:active {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0;
   }
   .contenedor .imagen {
     width: 80%;
@@ -279,6 +293,10 @@ button:active {
     width: 90%;
     margin: 10px;
     text-align: justify;
+    padding: 0;
+  }
+  .contenedor .texto p {
+    margin-right: 0;
   }
   .contenedor .texto button {
     margin: 10px;
@@ -399,7 +417,7 @@ button:active {
 }
 .container .card p {
   padding: 0 1rem;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 300;
 }
 .container .card a {
@@ -442,12 +460,13 @@ button:active {
 
 .footer-estructura {
   background-color: #2d2a30;
+  clip-path: polygon(27% 10%, 42% 17%, 51% 8%, 63% 16%, 71% 8%, 84% 17%, 91% 8%, 100% 0, 100% 100%, 0 98%, 0 0, 12% 14%);
   box-sizing: border-box;
   width: 100%;
   text-align: center;
   font: bold 16px sans-serif;
   padding: 8px;
-  margin-top: 80px;
+  padding-top: 105px;
 }
 .footer-estructura h3 {
   color: #ffffff;

@@ -2,31 +2,37 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding-bottom: 80px;
+    margin-left: 50px;
+    margin-right: 50px;
+    
 
     .imagen{
         text-align: center;
         flex: 1;
         overflow: hidden;
+        padding-right: 10px;
 
         img{
             width: 100%;
             height: 650px;
             object-fit: cover;
-            margin-left: 55px;
+            border-radius: 66% 34% 76% 24% / 30% 52% 48% 70% ;
+            
         }
     
     }
     
     .texto {
         flex: 1;
-        padding: 0 20px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        padding-left: 10px;
         p{
             align-self: flex-start;
             text-align: justify;
-            line-height : 25px;
+            line-height : 32px;
             
         }
         a {
@@ -42,6 +48,8 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin: 0;
+        
         .imagen{
             width: 80%;
             img{
@@ -54,6 +62,10 @@
             width: 90%;
             margin: 10px;
             text-align: justify;
+            padding: 0;
+            p{
+                margin-right: 0;
+            }
             button{
                 margin: 10px;
             }

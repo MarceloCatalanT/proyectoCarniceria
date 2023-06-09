@@ -6,8 +6,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://file.myfontastic.com/3Rn75Uu4epWzNbpaVojBz6/icons.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="../css/app.css">
     <title>Catalogo</title>
+    <link rel="icon" type="image/png" href="./imagenes/logo.png">
     <meta name="description" content="Explora nuestro catálogo de carnes premium: cortes jugosos, tiernos y de la máxima calidad. Encuentra la perfección en cada elección.">
     <meta name="keywords" content="Carnes premium, Cortes jugosos, Calidad excepcional, Variedad de opciones, Selección de primera clase, Cortes asados">
 </head>
@@ -40,46 +44,48 @@
       <section class="contenido">
         <div class="banner">
             <img src="../imagenes/catalogo.jpg" alt="">
-            <h2>Nuestros Productos</h2>
+        </div>
+        <div class="enunciado">
+            <h2>Nuestros productos</h2>
         </div>        
       </section>
       <div class="contenedor-catalogo">
-        <div class="caja caja1"> <img src="../imagenes/producto1.jpg"><p>Bife Lomo Vetado</p><p>$ 10.990 x kg</p>
+        <div class="caja caja1" data-aos="flip-left"> <img src="../imagenes/producto1.jpg"><p>Bife Lomo Vetado</p><p>$ 10.990 x kg</p>
             <button class="button-secundario">
                 <span>Comprar</span>
             </button>
         </div>
-        <div class="caja caja2"> <img src="../imagenes/producto2.jpg"><p>Chuleton Cerdo</p><p>$ 7.760 x kg</p>
+        <div class="caja caja2" data-aos="flip-left"> <img src="../imagenes/producto2.jpg"><p>Chuleton Cerdo</p><p>$ 7.760 x kg</p>
             <button class="button-secundario">
                 <span>Comprar</span>
             </button>
         </div>
-        <div class="caja caja3"> <img src="../imagenes/producto3.jpg"><p>Asiento</p><p>$ 10.190 x kg</p>
+        <div class="caja caja3" data-aos="flip-left"> <img src="../imagenes/producto3.jpg"><p>Asiento</p><p>$ 10.190 x kg</p>
             <button class="button-secundario">
                 <span>Comprar</span>
             </button>
         </div>
-        <div class="caja caja5"> <img src="../imagenes/producto5.jpg"><p>Lomo Liso</p><p>$ 8.990 x kg</p>
+        <div class="caja caja5" data-aos="flip-left"> <img src="../imagenes/producto5.jpg"><p>Lomo Liso</p><p>$ 8.990 x kg</p>
             <button class="button-secundario">
                 <span>Comprar</span>
             </button>
         </div>
-        <div class="caja caja6"> <img src="../imagenes/producto6.jpg"><p>Chuleton Ozobuco</p><p>$ 9.990 x kg</p>
+        <div class="caja caja6" data-aos="flip-left"> <img src="../imagenes/producto6.jpg"><p>Chuleton Ozobuco</p><p>$ 9.990 x kg</p>
             <button class="button-secundario">
                 <span>Comprar</span>
             </button>
         </div>
-        <div class="caja caja7"> <img src="../imagenes/producto7.jpg"><p>Pulpa Pollo</p><p>$ 3.990 x kg</p>
+        <div class="caja caja7" data-aos="flip-left"> <img src="../imagenes/producto7.jpg"><p>Pulpa Pollo</p><p>$ 3.990 x kg</p>
             <button class="button-secundario">
                 <span>Comprar</span>
             </button>
         </div>
-        <div class="caja caja8"> <img src="../imagenes/producto8.jpg"><p>Baby Back ribs</p><p>$ 12.490 x kg</p>
+        <div class="caja caja8" data-aos="flip-left"> <img src="../imagenes/producto8.jpg"><p>Baby Back ribs</p><p>$ 12.490 x kg</p>
             <button class="button-secundario">
                 <span>Comprar</span>
             </button>
         </div>
-        <div class="caja caja9"> <img src="../imagenes/producto9.jpg"><p>Punta Picana</p><p>$ 11.990 x kg</p>
+        <div class="caja caja9" data-aos="flip-left"> <img src="../imagenes/producto9.jpg"><p>Punta Picana</p><p>$ 11.990 x kg</p>
             <button class="button-secundario">
                 <span>Comprar</span>
             </button>
@@ -93,9 +99,11 @@
         <div class="footer-costados">
             <h3><span>Contacto</span></h3>
             <p class="footer-links">
+                <span class="icon-mail"></span>
                 <a href="#">CorreoEmpresa@ejemplo.com</a>
             </p>
             <p class="footer-links">
+                <span class="icon-phone"></span>
                 <a href="#">999 999 999</a></p>
             </p>
         </div>
@@ -104,12 +112,15 @@
         <div class="footer-centro">
             <h3><span>Siguenos</span></h3>
             <p class="footer-links">
+                <span class="icon-facebook"></span>
                 <a href="#">Facebook</a>
             </p>
             <p class="footer-links">
+                <span class="icon-instagram"></span>
                 <a href="#">Instagram</a></p>
             </p>
             <p class="footer-links">
+                <span class="icon-twitter"></span>
                 <a href="#">Twitter</a></p>
             </p>
         </div>
@@ -117,6 +128,7 @@
         <div class="footer-costados">
             <h3><span>Horarios</span></h3>
             <p class="footer-links">
+                <span class="icon-location"></span>
                 <a href="#">La Moneda #1234</a>
             </p>
             <p class="footer-links">
@@ -125,6 +137,9 @@
         </div>
     </footer>
   <script src="../js/script.js"></script>
+  <script>
+    AOS.init();
+  </script>
     
 </body>
 </html>

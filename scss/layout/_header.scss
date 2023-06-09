@@ -9,6 +9,7 @@
     padding: 30px;
     opacity: 0.8;
     flex-wrap: nowrap;
+    z-index: 99;
 
 
     .nav_logo{
@@ -95,26 +96,27 @@
     @media (max-width: 768px) {
     .nav_items{
         position: absolute;
-        top: 80px;
+        top: 90px;
         left: 0;
         background: orange;
         display: flex;
         flex-direction: column;
         width: 100%;
-        align-items: center;
+        align-items:flex-start;
         height: auto;
         transform: translateX(-100%);
         transition: 0.3s ease all;
         z-index: 999;
     }
     .lista{
-      display: flex;
       flex-direction: column;
       background: orange;
+      width: 100%;
     }
   
     .lista li{
       display: flex;
+      border-bottom: 1px solid black;
     }
 
     .btn-contacto{

@@ -8,7 +8,6 @@
     
     .caja{
         @include cajas (360px, 400px);
-        
 
         &:hover {
             transform: scale(0.9, 0.9);
